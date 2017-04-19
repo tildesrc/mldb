@@ -1,3 +1,5 @@
+# Copyright (C) 2017 Charlie Scherer <charlie@tildesrc.com>. All Rights Reserved.
+# This file is licensed under GPLv3.  Please see COPYING for more information.
 """mldb
 Support routines for managing machine learning datasets that minimize memory
 footprint even for huge datasets, facilitates concurrency and robust

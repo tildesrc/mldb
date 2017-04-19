@@ -1,3 +1,5 @@
+# Copyright (C) 2017 Charlie Scherer <charlie@tildesrc.com>. All Rights Reserved.
+# This file is licensed under GPLv3.  Please see COPYING for more information.
 import abc
 import collections
 import pickle
