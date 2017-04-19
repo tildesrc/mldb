@@ -6,6 +6,7 @@ import pickle
 import ctypes
 import os
 import cStringIO
+import functools
 
 import lmdb
 
@@ -20,6 +21,7 @@ class ManageTransaction(object): # pylint: disable=too-few-public-methods
         self.args = args
         self.kwargs = kwargs
     def __call__(self, func):
+        @functools.wraps(func)
         def wrapper(obj, *args, **kwargs): # pylint: disable=missing-docstring
             with obj.transaction(*self.args, **self.kwargs):
                 return func(obj, *args, **kwargs)

@@ -109,7 +109,6 @@ class DataSet(persistent.List): # pylint: disable=too-many-ancestors,too-many-pu
     In addition to list-like methods, DataSet also has
       * .add_constraint and .auto_constrain for contraining ndarray fields
       * a persistent dict-like .annotations for storing DataSet-wide data
-      * .dump_rectangular_field to facilitate cooperation with other languages.
     **kwargs are passed to TransactionManager, see the doc-string for that class,
     especially regarding the quick_write keyword.
     """
